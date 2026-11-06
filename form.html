@@ -1,0 +1,139 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="/img/Logo72anoss.png" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <script src="js/app.js" defer></script>
+    <title>Inscrição - Araruna Primavera Run 2026</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="header">
+        <h1>Araruna 72 anos Run</h1>
+        <p>Formulário de Inscrição 2026</p>
+      </div>
+
+      <div class="form-body">
+        <div id="msg" class="msg"></div>
+
+        <form id="inscricaoForm">
+          <div class="form-group">
+            <label for="nome">Nome completo</label>
+            <input
+              type="text"
+              id="nome"
+              name="nome"
+              required
+              maxlength="120"
+              placeholder="Seu nome completo"
+            />
+          </div>
+
+          <div class="form-group">
+            <label for="dateInput">Data de nascimento</label>
+            <input
+              pattern="\d{2}/\d{2}/\d{4}"
+              type="text"
+              id="dateInput"
+              name="dateInput"
+              required
+              placeholder="dia/mês/ano"
+            />
+          </div>
+
+          <div class="form-group">
+            <label for="telefone">Telefone</label>
+            <input
+              type="tel"
+              id="telefone"
+              name="telefone"
+              required
+              maxlength="16"
+              placeholder="(44) 99999-9999"
+            />
+          </div>
+
+          <div class="form-group">
+            <label for="email">E-mail</label>
+            <input
+              type="email"
+              id="email"
+              name="email"
+              required
+              maxlength="120"
+              placeholder="seu@email.com"
+            />
+          </div>
+
+          <div class="form-group">
+            <label for="estado">Estado</label>
+            <select id="estado" name="estado" required>
+              <option>Paraná</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label for="cidade">Cidade</label>
+            <select id="cidade" name="cidade" required></select>
+          </div>
+
+          <div class="form-group">
+            <label for="categoria">Categoria</label>
+            <select id="categoria" name="categoria" required>
+              <option value="">Selecione...</option>
+              <option value="Corrida - 5 KM (Ida e volta)">
+                Corrida - 5 KM (Ida e volta)
+              </option>
+              <option value="Caminhada - 5 KM (Ida e volta)">
+                Caminhada - 5 KM (Ida e volta)
+              </option>
+            </select>
+          </div>
+
+     <label for="consente_uninga">
+  Autoriza o envio do seu nome e telefone à Uningá, parceira do evento, para receber informações sobre a faculdade?
+    Sua resposta não interfere na inscrição.
+</label>
+<select id="consente_uninga" name="consente_uninga" required>
+  <option value="" disabled selected>Selecione uma opção</option>
+  <option value="sim">Sim</option>
+  <option value="nao">Não</option>
+</select>
+          
+          <div class="form-check">
+            <input type="checkbox" id="aceite" name="aceite" required />
+            <label for="aceite">
+              Li e concordo com a
+              <a href="policy.html" target="_blank">Política de Privacidade</a>
+            </label>
+          </div>
+
+          <div>
+            <button type="submit" id="btnEnviar" class="enviar">
+              Realizar inscrição
+            </button>
+          </div>
+        </form>
+      </div>
+
+      <div class="footer">
+        Prefeitura de Araruna • Inscrição online <br />
+        <a href="index.html" class="btn btn-outline" style="margin-top: 20px">
+          Retornar
+        </a>
+      </div>
+    </div>
+
+    <div id="popup" class="popup-overlay">
+      <div class="popup-box">
+        <span class="popup-evento">Araruna 72 anos Run</span>
+        <div id="popupIcone" class="popup-icone"></div>
+        <h2 id="popupTitulo"></h2>
+        <p id="popupTexto"></p>
+        <button type="button" id="popupFechar" class="popup-btn">OK</button>
+      </div>
+    </div>
+  </body>
+</html>

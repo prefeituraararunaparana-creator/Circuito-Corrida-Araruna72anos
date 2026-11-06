@@ -1,0 +1,180 @@
+<!doctype html>
+<html lang="pt-BR">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Araruna 72 anos Run 2026</title>
+        <link rel="icon" href="/img/Logo72anoss.png" />
+        <link
+            rel="stylesheet"
+            href="./css/style.css"
+        />
+    </head>
+    <body>
+        <div class="shooting-star"></div>
+        <span class="twinkle-star s1"></span>
+        <span class="twinkle-star s2"></span>
+        <span class="twinkle-star s3"></span>
+        <span class="twinkle-star s4"></span>
+        <span class="twinkle-star s5"></span>
+        <span class="twinkle-star s6"></span>
+
+        <!-- HERO -->
+        <section class="hero-section">
+            <div class="hero-content">
+                <span class="badge">Edição 2026</span>
+                <img
+                src="img/logo72anoss.png"
+                class="logo"
+                alt="logo araruna primavera run"
+                />
+                <p class="hero-sub" style="margin-bottom: 20px">
+                    <strong>
+                        Terceira Etapa · Circuito de 72 anos de Araruna
+                    </strong>
+                </p>
+
+                <div class="home_buttons">
+                    <a href="form.html" class="btn btn-orange">Fazer Inscrição</a> 
+                    <a href="about.html" class="btn btn-outline">Sobre o Circuito</a>
+                </div>
+                <div class="count-box" id="count-box">
+                        <span id="cd-days">00</span>
+                        <span class="label"> DIAS</span>
+                </div>
+                <div id="time-details">
+                    <div class="countdown" id="countdown">
+                          <div class="unit"><span id="cd-hours">00</span><span class="label"> HORAS</span></div>
+                          <span class="sep">:</span>
+                          <div class="unit"><span id="cd-mins">00</span><span class="label"> MINUTOS</span></div>
+                          <span class="sep">:</span>
+                          <div class="unit"><span id="cd-secs">00</span><span class="label"> SEGUNDOS</span></div>
+                    </div>
+                </div>
+        </section>
+
+        <!-- INFORMAÇÕES -->
+        <div class="event-info" style="margin-top: 30px">
+            <section class="info-section">
+                <div style="text-align: center;">
+                    <h1 style="margin-bottom: 2.0rem;">Informações sobre o evento</h1>
+
+                </div>
+                <div class="info-grid">
+                    <div class="info-card">
+
+                        <div>
+                            <strong>Data</strong>
+                            <p>27 de Novembro de 2026</p>
+                        </div>
+                    </div>
+                    <div class="info-card">
+                        <div>
+                            <strong>Horário</strong>
+                            <p>Largada às 20H00</p>
+                        </div>
+                    </div>
+                    <a
+                        href="https://www.google.com/maps/d/embed?mid=1VnQ6UnjbndxFxpXGa0FFEH3MA3MR22E&ehbc=2E312F%22&ll=-23.930112970374026%2C-52.48124462718943&z=17"
+                        class="info-link"
+                    >
+                        <div class="info-card">
+                            <div>
+                                <strong>Local - Início</strong>
+                                <p>Em frente a Prefeitura de Araruna-PR na Rua 7 de Setembro</p>
+                            </div>
+                        </div>
+                    </a>
+                    <div class="info-card">
+                        <div>
+                            <strong>Prémio</strong>
+                            <p>Medalha de participação</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- PERCURSOS -->
+            <section class="percursos-section">
+                <h2> Percurso disponível</h2>
+                <p class="section-sub" style="margin-top: 10px;">
+                    Escolha a velocidade de correr
+                </p>
+
+                <div class="categories-grid">
+                    <div class="category-card">
+                        <h3>5 KM</h3>
+                        <p>Ida e volta</p>
+                        <p>Corrida e caminhada</p>
+                    </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+        <!-- CTA -->
+        <section class="cta-section">
+            <h2>Garanta sua vaga agora</h2>
+            <a href="form.html" class="btn btn-orange">Fazer Inscrição</a>
+        </section> 
+
+        <!-- FOOTER -->
+        <footer class="page-footer">
+            <p>
+                Prefeitura de Araruna &bull;
+                <strong>Araruna 72 anos Run</strong>
+            </p>
+            <p>27 de novembro de 2026 · 20H00 · Araruna – PR</p>
+            <br />
+            <a href="policy.html">
+                <strong>
+                    Politica de privacidade
+                </strong>
+            </a>
+        </footer>
+
+        <script>
+            const target = new Date("2026-11-27T20:00:00");
+
+            function tick() {
+                const diff = target - new Date();
+
+                const pad = (n) => String(Math.max(0, n)).padStart(2, "0");
+
+                const dias = Math.floor(diff / 86400000);
+                const horas = Math.floor((diff % 86400000) / 3600000);
+                const mins = Math.floor((diff % 3600000) / 60000);
+                const secs = Math.floor((diff % 60000) / 1000);
+
+                document.getElementById("cd-days").textContent = pad(dias);
+                document.getElementById("cd-hours").textContent = pad(horas);
+                document.getElementById("cd-mins").textContent = pad(mins);
+                document.getElementById("cd-secs").textContent = pad(secs);
+
+                const details = document.getElementById("time-details");
+                const countdown = document.getElementById("count-box");
+
+                // Se ainda faltam dias
+                if (dias > 0) {
+                    details.style.display = "none";
+                    countdown.style.display = "flex";
+                }
+
+                // Último dia → mostra horas/min/seg
+                else if (dias === 0) {
+                    details.style.display = "flex";
+                    countdown.style.display = "none";
+                }
+
+                // Evento já passou
+                else {
+                    details.style.display = "none";
+                    countdown.style.display = "none";
+                }
+            }
+
+            tick();
+            setInterval(tick, 1000);
+        </script>
+    </body>
+</html>
