@@ -3,128 +3,155 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="icon" href="/img/Logo72anoss.png" />
+    <link rel="icon" href="img/nightrun.ico" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Saira+Condensed:wght@800&family=Albert+Sans:wght@400;500;700&family=JetBrains+Mono:wght@500&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="./css/style.css" />
     <script src="js/app.js" defer></script>
-    <title>Inscrição - Araruna Primavera Run 2026</title>
+    <meta name="description" content="Formulário de inscrição da Night Run Araruna 72 anos, 27 de novembro de 2026." />
+    <title>Inscrição, Araruna 72 anos Run 2026</title>
   </head>
   <body>
-    <div class="container">
-      <div class="header">
-        <h1>Araruna 72 anos Run</h1>
-        <p>Formulário de Inscrição 2026</p>
+    <header class="hero hero-inner on-ink">
+      <img class="hero-photo" src="img/web/hero-largada.webp" alt="" width="1600" height="720" />
+      <div class="wrap">
+        <div class="header">
+          <img class="hero-brand" src="img/web/night-run-cor.webp" width="900" height="581" alt="Night Run Araruna 72 anos" />
+          <h1>Araruna 72 anos Run</h1>
+          <p class="hero-lead">Formulário de Inscrição 2026</p>
+        </div>
       </div>
+    </header>
 
-      <div class="form-body">
-        <div id="msg" class="msg"></div>
+    <main class="container wrap">
+      <div class="form-shell">
+        <div class="form-body form-card">
+          <div id="msg" class="msg"></div>
 
-        <form id="inscricaoForm">
-          <div class="form-group">
-            <label for="nome">Nome completo</label>
-            <input
-              type="text"
-              id="nome"
-              name="nome"
-              required
-              maxlength="120"
-              placeholder="Seu nome completo"
-            />
-          </div>
+          <form id="inscricaoForm">
+            <div class="form-group">
+              <label for="nome">Nome completo</label>
+              <input
+                type="text"
+                id="nome"
+                name="nome"
+                required
+                maxlength="120"
+                placeholder="Seu nome completo"
+              />
+            </div>
 
-          <div class="form-group">
-            <label for="dateInput">Data de nascimento</label>
-            <input
-              pattern="\d{2}/\d{2}/\d{4}"
-              type="text"
-              id="dateInput"
-              name="dateInput"
-              required
-              placeholder="dia/mês/ano"
-            />
-          </div>
+            <div class="form-group">
+              <label for="dateInput">Data de nascimento</label>
+              <input
+                pattern="\d{2}/\d{2}/\d{4}"
+                type="text"
+                id="dateInput"
+                name="dateInput"
+                required
+                placeholder="dia/mês/ano"
+              />
+            </div>
 
-          <div class="form-group">
-            <label for="telefone">Telefone</label>
-            <input
-              type="tel"
-              id="telefone"
-              name="telefone"
-              required
-              maxlength="16"
-              placeholder="(44) 99999-9999"
-            />
-          </div>
+            <div class="form-group">
+              <label for="telefone">Telefone</label>
+              <input
+                type="tel"
+                id="telefone"
+                name="telefone"
+                required
+                maxlength="16"
+                placeholder="(44) 99999-9999"
+              />
+            </div>
 
-          <div class="form-group">
-            <label for="email">E-mail</label>
-            <input
-              type="email"
-              id="email"
-              name="email"
-              required
-              maxlength="120"
-              placeholder="seu@email.com"
-            />
-          </div>
+            <div class="form-group">
+              <label for="email">E-mail</label>
+              <input
+                type="email"
+                id="email"
+                name="email"
+                required
+                maxlength="120"
+                placeholder="seu@email.com"
+              />
+            </div>
 
-          <div class="form-group">
-            <label for="estado">Estado</label>
-            <select id="estado" name="estado" required>
-              <option>Paraná</option>
-            </select>
-          </div>
+            <div class="form-group">
+              <label for="estado">Estado</label>
+              <select id="estado" name="estado" required>
+                <option>Paraná</option>
+              </select>
+            </div>
 
-          <div class="form-group">
-            <label for="cidade">Cidade</label>
-            <select id="cidade" name="cidade" required></select>
-          </div>
+            <div class="form-group">
+              <label for="cidade">Cidade</label>
+              <select id="cidade" name="cidade" required></select>
+            </div>
 
-          <div class="form-group">
-            <label for="categoria">Categoria</label>
-            <select id="categoria" name="categoria" required>
-              <option value="">Selecione...</option>
-              <option value="Corrida - 5 KM (Ida e volta)">
-                Corrida - 5 KM (Ida e volta)
-              </option>
-              <option value="Caminhada - 5 KM (Ida e volta)">
-                Caminhada - 5 KM (Ida e volta)
-              </option>
-            </select>
-          </div>
+            <div class="form-group">
+              <label for="categoria">Categoria</label>
+              <select id="categoria" name="categoria" required>
+                <option value="">Selecione…</option>
+                <option value="Corrida - 5 KM (Ida e volta)">
+                  Corrida - 5 KM (Ida e volta)
+                </option>
+                <option value="Caminhada - 5 KM (Ida e volta)">
+                  Caminhada - 5 KM (Ida e volta)
+                </option>
+              </select>
+            </div>
 
-     <label for="consente_uninga">
-  Autoriza o envio do seu nome e telefone à Uningá, parceira do evento, para receber informações sobre a faculdade?
-    Sua resposta não interfere na inscrição.
-</label>
-<select id="consente_uninga" name="consente_uninga" required>
-  <option value="" disabled selected>Selecione uma opção</option>
-  <option value="sim">Sim</option>
-  <option value="nao">Não</option>
-</select>
-          
-          <div class="form-check">
-            <input type="checkbox" id="aceite" name="aceite" required />
-            <label for="aceite">
-              Li e concordo com a
-              <a href="policy.html" target="_blank">Política de Privacidade</a>
-            </label>
-          </div>
+            <div class="consent">
+              <label for="consente_uninga" class="consent-label">
+                Autoriza o envio do seu nome e telefone à Uningá, parceira do evento, para receber informações sobre a faculdade?
+                Sua resposta não interfere na inscrição.
+              </label>
+              <select id="consente_uninga" name="consente_uninga" required>
+                <option value="" disabled selected>Selecione uma opção</option>
+                <option value="sim">Sim</option>
+                <option value="nao">Não</option>
+              </select>
+            </div>
 
-          <div>
-            <button type="submit" id="btnEnviar" class="enviar">
-              Realizar inscrição
-            </button>
-          </div>
-        </form>
+            <div class="form-check">
+              <input type="checkbox" id="aceite" name="aceite" required />
+              <label for="aceite">
+                Li e concordo com a
+                <a href="policy.html" target="_blank">Política de Privacidade</a>
+              </label>
+            </div>
+
+            <div>
+              <button type="submit" id="btnEnviar" class="enviar">
+                Realizar inscrição
+              </button>
+            </div>
+          </form>
+        </div>
+
+        <div class="footer form-back">
+          <a href="index.html" class="btn btn-outline">Retornar</a>
+        </div>
       </div>
+    </main>
 
-      <div class="footer">
-        Prefeitura de Araruna • Inscrição online <br />
-        <a href="index.html" class="btn btn-outline" style="margin-top: 20px">
-          Retornar
-        </a>
+    <footer class="site-footer">
+      <div class="wrap">
+        <div class="footer-grid">
+          <img class="footer-logo" src="img/web/night-run-branco.webp" width="900" height="581" alt="Night Run Araruna 72 anos" />
+          <p class="footer-text"><strong>Inscrição online</strong>Prefeitura de Araruna</p>
+          <div class="footer-gov">
+            <p class="footer-gov-label">Realização:</p>
+            <img class="footer-gov-logo" src="img/web/prefeitura-realizacao.webp" width="900" height="158" alt="Prefeitura Municipal de Araruna, Diretoria de Esporte e Lazer" />
+          </div>
+        </div>
       </div>
-    </div>
+    </footer>
 
     <div id="popup" class="popup-overlay">
       <div class="popup-box">

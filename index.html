@@ -4,90 +4,84 @@
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>Araruna 72 anos Run 2026</title>
-        <link rel="icon" href="/img/Logo72anoss.png" />
+        <meta name="description" content="Night Run Araruna 72 anos: terceira etapa do Circuito de Corrida e Caminhada, 27 de novembro de 2026, às 20h00. Inscreva-se." />
+        <link rel="icon" href="img/nightrun.ico" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
         <link
+            href="https://fonts.googleapis.com/css2?family=Saira+Condensed:wght@800&family=Albert+Sans:wght@400;500;700&family=JetBrains+Mono:wght@500&display=swap"
             rel="stylesheet"
-            href="./css/style.css"
         />
+        <link rel="stylesheet" href="./css/style.css" />
     </head>
     <body>
-        <div class="shooting-star"></div>
-        <span class="twinkle-star s1"></span>
-        <span class="twinkle-star s2"></span>
-        <span class="twinkle-star s3"></span>
-        <span class="twinkle-star s4"></span>
-        <span class="twinkle-star s5"></span>
-        <span class="twinkle-star s6"></span>
 
         <!-- HERO -->
-        <section class="hero-section">
-            <div class="hero-content">
-                <span class="badge">Edição 2026</span>
-                <img
-                src="img/Logo72anoss.png"
-                class="logo"
-                alt="logo araruna 72 anos night run"
-                />
-                <p class="hero-sub" style="margin-bottom: 20px">
-                    <strong>
-                        Terceira Etapa · Circuito de 72 anos de Araruna
-                    </strong>
-                </p>
+        <header class="hero on-ink">
+            <img class="hero-photo" src="img/web/hero-largada.webp" alt="" width="1600" height="720" />
+            <div class="wrap">
+                <div class="hero-grid">
+                    <div class="hero-content">
+                        <img
+                            src="img/web/night-run-cor.webp"
+                            class="hero-logo"
+                            width="900"
+                            height="581"
+                            alt="logo araruna 72 anos night run"
+                        />
+                        <h1 class="hero-title">Terceira etapa</h1>
+                        <p class="hero-lead">Circuito de 72 anos de Araruna, edição 2026.</p>
 
-                <div class="home_buttons">
-                    <a href="form.html" class="btn btn-orange">Fazer Inscrição</a> 
-                    <a href="about.html" class="btn btn-outline">Sobre o Circuito</a>
-                </div>
-                <div class="count-box" id="count-box">
-                        <span id="cd-days">00</span>
-                        <span class="label"> DIAS</span>
-                </div>
-                <div id="time-details">
-                    <div class="countdown" id="countdown">
-                          <div class="unit"><span id="cd-hours">00</span><span class="label"> HORAS</span></div>
-                          <span class="sep">:</span>
-                          <div class="unit"><span id="cd-mins">00</span><span class="label"> MINUTOS</span></div>
-                          <span class="sep">:</span>
-                          <div class="unit"><span id="cd-secs">00</span><span class="label"> SEGUNDOS</span></div>
+                        <div class="actions home_buttons">
+                            <a href="form.html" class="btn btn-orange">Fazer Inscrição</a>
+                            <a href="about.html" class="btn btn-outline">Sobre o Circuito</a>
+                        </div>
+                    </div>
+
+                    <div class="hero-count">
+                        <div class="count-box" id="count-box">
+                            <span id="cd-days">00</span>
+                            <span class="label">dias</span>
+                        </div>
+                        <div id="time-details">
+                            <div class="countdown" id="countdown">
+                                <div class="unit"><span id="cd-hours">00</span><span class="label">horas</span></div>
+                                <span class="sep">:</span>
+                                <div class="unit"><span id="cd-mins">00</span><span class="label">minutos</span></div>
+                                <span class="sep">:</span>
+                                <div class="unit"><span id="cd-secs">00</span><span class="label">segundos</span></div>
+                            </div>
+                        </div>
                     </div>
                 </div>
-        </section>
+            </div>
+        </header>
 
-        <!-- INFORMAÇÕES -->
-        <div class="event-info" style="margin-top: 30px">
-            <section class="info-section">
-                <div style="text-align: center;">
-                    <h1 style="margin-bottom: 2.0rem;">Informações sobre o evento</h1>
-
-                </div>
-                <div class="info-grid">
-                    <div class="info-card">
-
-                        <div>
+        <main>
+            <!-- INFORMAÇÕES -->
+            <section class="section info-section">
+                <div class="wrap">
+                    <div class="section-head">
+                        <h2 class="section-title">Informações sobre o evento</h2>
+                    </div>
+                    <div class="facts info-grid">
+                        <div class="fact info-card">
                             <strong>Data</strong>
                             <p>27 de Novembro de 2026</p>
                         </div>
-                    </div>
-                    <div class="info-card">
-                        <div>
+                        <div class="fact info-card">
                             <strong>Horário</strong>
                             <p>Largada às 20H00</p>
                         </div>
-                    </div>
-                    <a
-                        href="https://www.google.com/maps/d/embed?mid=1VnQ6UnjbndxFxpXGa0FFEH3MA3MR22E&ehbc=2E312F%22&ll=-23.930112970374026%2C-52.48124462718943&z=17"
-                        class="info-link"
-                    >
-                        <div class="info-card">
-                            <div>
-                                <strong>Local - Início</strong>
-                                <p>Em frente a Prefeitura de Araruna-PR na Rua 7 de Setembro</p>
-                            </div>
-                        </div>
-                    </a>
-                    <div class="info-card">
-                        <div>
-                            <strong>Prémio</strong>
+                        <a
+                            href="https://www.google.com/maps/d/embed?mid=1VnQ6UnjbndxFxpXGa0FFEH3MA3MR22E&ehbc=2E312F%22&ll=-23.930112970374026%2C-52.48124462718943&z=17"
+                            class="fact info-link"
+                        >
+                            <strong>Local - Início</strong>
+                            <p>Em frente a Prefeitura de Araruna-PR na Rua 7 de Setembro</p>
+                        </a>
+                        <div class="fact info-card">
+                            <strong>Prêmio</strong>
                             <p>Medalha de participação</p>
                         </div>
                     </div>
@@ -95,45 +89,81 @@
             </section>
 
             <!-- PERCURSOS -->
-            <section class="percursos-section">
-                <h2> Percurso disponível</h2>
-                <p class="section-sub" style="margin-top: 10px;">
-                    Escolha a velocidade de correr
-                </p>
-
-                <div class="categories-grid">
-                    <div class="category-card">
-                        <h3>5 KM</h3>
-                        <p>Ida e volta</p>
-                        <p>Corrida e caminhada</p>
+            <section class="section percursos-section">
+                <div class="wrap">
+                    <div class="section-head">
+                        <h2 class="section-title">Percurso disponível</h2>
+                        <p class="section-sub">Escolha a velocidade de correr</p>
                     </div>
+
+                    <div class="course categories-grid">
+                        <div class="course-figure category-card">
+                            <h3>5 KM</h3>
+                            <p>Ida e volta</p>
+                        </div>
+                        <ul class="course-notes">
+                            <li><strong>Modalidade</strong>Corrida e caminhada</li>
+                        </ul>
                     </div>
                 </div>
             </section>
-        </div>
+
+            <!-- APOIADORES -->
+            <section class="section sponsors" aria-labelledby="apoiadores-titulo">
+                <div class="wrap">
+                    <div class="section-head">
+                        <h2 class="section-title" id="apoiadores-titulo">Apoiadores do evento</h2>
+                        <p class="section-sub">Quem corre junto com a gente. Parceiros que incentivam o esporte e fazem parte desta edição especial.</p>
+                    </div>
+
+                    <ul class="sponsor-grid">
+                        <li>
+                            <a class="sponsor-card" href="https://www.ajrorato.ind.br/" target="_blank" rel="noopener noreferrer" aria-label="A. J. Rorato, abre o site oficial em uma nova aba">
+                                <img class="sponsor-logo sponsor-rorato" width="520" height="335" alt="A. J. Rorato" src="img/web/apoio-rorato.webp" />
+                            </a>
+                        </li>
+                        <li>
+                            <a class="sponsor-card" href="https://site.uninga.br/" target="_blank" rel="noopener noreferrer" aria-label="Uningá Centro Universitário, abre o site oficial em uma nova aba">
+                                <img class="sponsor-logo sponsor-uninga" width="433" height="200" alt="Uningá Centro Universitário" src="img/web/apoio-uninga.webp" />
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+        </main>
 
         <!-- CTA -->
-        <section class="cta-section">
-            <h2>Garanta sua vaga agora</h2>
-            <div class="home_buttons_dois">
-                <a href="form.html" class="btn btn-orange">Fazer Inscrição</a>
-                <a href="AKfycbw8RtAa-yxHIy6gdge5jbBJ3cZyOm4VykawQrmUA9ywM4qPtoVU0oUWgjaWhnDVL_hI" class="btn btn-orange">Dashbord</a>
+        <section class="cta cta-section on-ink">
+            <div class="wrap">
+                <div class="cta-grid">
+                    <h2>Garanta sua vaga agora</h2>
+                    <div class="actions home_buttons_dois">
+                        <a href="form.html" class="btn btn-orange">Fazer Inscrição</a>
+                        <a href="AKfycbw8RtAa-yxHIy6gdge5jbBJ3cZyOm4VykawQrmUA9ywM4qPtoVU0oUWgjaWhnDVL_hI" class="btn btn-outline">Dashbord</a>
+                    </div>
+                </div>
             </div>
-        </section> 
+        </section>
 
         <!-- FOOTER -->
-        <footer class="page-footer">
-            <p>
-                Prefeitura de Araruna &bull;
-                <strong>Araruna 72 anos Run</strong>
-            </p>
-            <p>27 de novembro de 2026 · 20H00 · Araruna – PR</p>
-            <br />
-            <a href="policy.html">
-                <strong>
-                    Politica de privacidade
-                </strong>
-            </a>
+        <footer class="site-footer page-footer">
+            <div class="wrap">
+                <div class="footer-grid">
+                    <img class="footer-logo" src="img/web/night-run-branco.webp" width="900" height="581" alt="Night Run Araruna 72 anos" />
+
+                    <div class="footer-text">
+                        <strong>Araruna 72 anos Run</strong>
+                        <p>Prefeitura de Araruna</p>
+                        <p>27 de novembro de 2026, 20H00, Araruna, PR</p>
+                        <a href="policy.html"><strong>Politica de privacidade</strong></a>
+                    </div>
+
+                    <div class="footer-gov">
+                        <p class="footer-gov-label">Realização:</p>
+                        <img class="footer-gov-logo" src="img/web/prefeitura-realizacao.webp" width="900" height="158" alt="Prefeitura Municipal de Araruna, Diretoria de Esporte e Lazer" />
+                    </div>
+                </div>
+            </div>
         </footer>
 
         <script>
