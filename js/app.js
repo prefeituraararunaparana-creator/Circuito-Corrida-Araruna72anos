@@ -67,7 +67,7 @@ estadoSelect.addEventListener("change", () => {
 });
 
 const SCRIPT_URL =
-  "https://script.google.com/macros/s/AKfycbxn7_8Kvb7jCNTBFySITrieL8hbtY_GUujAHsCRrtLuIWSNtZh-VaJ7L2Y7eeQ-53vi/exec";
+  "https://script.google.com/macros/s/AKfycbxJqj8hF42O86WurgMC65VeWJcU5gducRau50dhWNsnMH_Gw-CnkczIWw7FZUQeOX6m/exec";
 
 const form = document.getElementById("inscricaoForm");
 const msg = document.getElementById("msg");
