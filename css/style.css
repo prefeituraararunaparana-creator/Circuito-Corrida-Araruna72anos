@@ -394,6 +394,7 @@ a.fact:hover p { text-decoration: underline; text-decoration-color: var(--color-
 .sponsor-logo { width: auto; max-width: 100%; object-fit: contain; }
 .sponsor-rorato { height: 112px; }
 .sponsor-uninga { height: 82px; }
+.sponsor-sicredi { height: 112px; }
 
 
 /* ---------- Rodapé ---------- */
@@ -618,6 +619,7 @@ input:disabled, select:disabled { opacity: 0.6; cursor: not-allowed; }
   .sponsor-card { min-height: 150px; padding: var(--space-lg); }
   .sponsor-rorato { height: 96px; }
   .sponsor-uninga { height: 70px; }
+  .sponsor-sicredi { width: 62%; max-width: 220px; height: auto; }
 
   .footer-grid { grid-template-columns: minmax(0, 1fr); gap: var(--space-lg); padding-block: var(--space-xl); }
   .footer-logo { max-width: 220px; }
