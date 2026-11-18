@@ -13,6 +13,23 @@
             rel="stylesheet"
         />
         <link rel="stylesheet" href="./css/style.css" />
+        <!-- Ajuste pontual: alinhamento e proporção visual dos apoiadores. -->
+        <style>
+            .sponsor-grid { align-items: stretch; }
+            .sponsor-grid > li { display: flex; min-width: 0; }
+            .sponsor-grid .sponsor-card { width: 100%; }
+            .sponsor-grid .sponsor-sicredi {
+                width: 190px;
+                height: auto;
+                max-width: 100%;
+            }
+            @media (max-width: 700px) {
+                .sponsor-grid .sponsor-sicredi {
+                    width: 165px;
+                    height: auto;
+                }
+            }
+        </style>
     </head>
     <body>
 
@@ -119,7 +136,7 @@
                     <ul class="sponsor-grid">
                         <li>
                             <a class="sponsor-card" href="https://www.sicredi.com.br/home/" target="_blank" rel="noopener noreferrer" aria-label="Sicredi, abre o site oficial em uma nova aba">
-                                <img class="sponsor-logo sponsor-sicredi" width="520" height="335" alt="Sicredi" src="img/web/apoio-sicredi1.webp" />
+                                <img class="sponsor-logo sponsor-sicredi" width="520" height="129" alt="Sicredi" src="img/web/apoio-sicredi1.webp" />
                             </a>
                         </li>
                         <li>
